@@ -78,9 +78,11 @@ df.value_counts(subset=['SOURCE'])
 #df['SOURCE'].value_counts()
 
 
+
 # Soru 3: Kaç unique PRICE vardır?
 
 df["PRICE"].nunique()
+
 
 # Soru 4: Hangi P"RICE'dan kaçar tane satış gerçekleşmiş?
 
@@ -100,6 +102,8 @@ df.groupby('COUNTRY')['PRICE'].count()
 #df.groupby('COUNTRY')['PRICE'].sum()
 
 df.pivot_table(values='PRICE', index='COUNTRY', aggfunc='sum')
+
+
 
 # Soru 7: SOURCE türlerine göre göre satış sayıları nedir?
 
