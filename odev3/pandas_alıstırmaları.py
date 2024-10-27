@@ -90,3 +90,6 @@ df["total_bill_tip_sum"] = df["total_bill"]+df["tip"]
 #Görev 23:  total_bill_tip_sum değişkenine göre büyükten küçüğe sıralayınız ve ilk 30 kişiyi yeni bir dataframe'e atayınız.
 df_new = df.sort_values(by='total_bill_tip_sum', ascending=False)[:30]
 df_new.head()
+
+
+df.set_index("day", inplace=True)
